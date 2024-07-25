@@ -1,0 +1,31 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.LoanApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your light theme here. -->
+<!--         <item name="colorPrimary">@color/my_light_primary</item> -->
+    </style>
+
+    <style name="Theme.LoanApp" parent="Base.Theme.LoanApp">
+        <item name="colorPrimary">#73787F</item>
+    </style>
+
+    <style name="Button.color" parent="ThemeOverlay.AppCompat">
+        <item name="colorPrimary">@color/auth_button_bg</item>
+    </style>
+
+    <style name="ShowAllButton.color" parent="ThemeOverlay.AppCompat">
+        <item name="colorPrimary">@color/show_all_loan</item>
+    </style>
+
+    <style name="SeekBarColor"
+        parent="Widget.AppCompat.SeekBar">
+        <item name="colorAccent">@color/price_slider</item>
+
+    </style>
+
+    <style name="MyRadioButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">@color/radio</item>
+        <item name="colorControlActivated">@color/radio</item>
+    </style>
+
+</resources>

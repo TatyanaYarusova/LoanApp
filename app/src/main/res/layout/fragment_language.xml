@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.LanguageFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageButton
+            android:id="@+id/back_button_language"
+            android:layout_width="@dimen/size_icon_language"
+            android:layout_height="@dimen/size_icon_language"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/back_button_icon"
+
+            android:layout_marginTop="@dimen/margin_top_back_icon"
+            android:layout_marginStart="@dimen/margin_start_back_icon"
+            />
+
+        <TextView
+            android:id="@+id/title_language"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_language"
+            app:layout_constraintStart_toEndOf="@+id/back_button_language"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:fontFamily="@font/montserrat_medium"
+            android:textColor="@color/text_color"
+            android:layout_marginStart="@dimen/margin_start_title_language"
+            android:textSize="@dimen/text_size_title_language"
+            android:layout_marginTop="@dimen/margin_top_title_language"
+            />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/title_language"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:orientation="vertical"
+            android:layoutDirection="rtl"
+            android:layout_marginHorizontal="@dimen/margin_h_radio"
+            android:layout_marginTop="@dimen/margin_top_radio"
+            >
+
+            <RadioButton
+                android:id="@+id/rus_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ru_language_title"
+                android:checked="true"
+
+                android:paddingVertical="@dimen/padding_v_radio"
+
+                android:theme="@style/MyRadioButton"
+
+                android:textSize="@dimen/text_size_language"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/text_color"
+                />
+
+            <RadioButton
+                android:id="@+id/en_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/en_language_title"
+
+                android:theme="@style/MyRadioButton"
+                android:paddingVertical="@dimen/padding_v_radio"
+
+                android:textSize="@dimen/text_size_language"
+                android:fontFamily="@font/montserrat_medium"
+                android:textColor="@color/text_color"
+                />
+
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/button_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:background="@drawable/button"
+            android:theme="@style/Button.color"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/text_size_button_result"
+            android:fontFamily="@font/montserrat_medium"
+
+            android:text="@string/button_text_language"
+            android:layout_margin="@dimen/margin_button_result"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

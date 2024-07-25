@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainLoanFragment"
+    android:background="@color/bg">
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/app_bar_main_page"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+
+            android:padding="@dimen/padding_header"
+            >
+            <TextView
+                android:id="@+id/title_main_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+
+                android:text="@string/main_page_title"
+                android:fontFamily="@font/montserrat_medium"
+                android:textSize="@dimen/title_main_loan_text_size"
+                android:textColor="@color/text_color"
+                />
+
+            <ImageButton
+                android:id="@+id/onboarding_button"
+                android:layout_width="@dimen/onboarding_icon_size"
+                android:layout_height="@dimen/onboarding_icon_size"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/onboarding_button_icon"
+
+
+                android:contentDescription="@string/open_onboarding" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/bg_main_page">
+
+                <ImageView
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/margin_hor_banner"
+                    android:layout_marginTop="@dimen/margin_top_banner"
+                    android:contentDescription="@string/banner_description"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/banner_main_page"
+                    app:layout_constraintEnd_toEndOf="parent"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/sum_loan_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_start_sum_loan_text_title"
+                    android:layout_marginTop="@dimen/margin_top_sum_loan_text_title"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:text="@string/title_card_text"
+
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/text_size_sum_loan_text_title"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/banner" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/settings_loan_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/margin_start_settings_loan_card"
+                    android:layout_marginTop="@dimen/margin_top_settings_loan_card"
+                    android:layout_marginEnd="@dimen/margin_end_settings_loan_card"
+
+                    android:background="@drawable/oval_card"
+                    android:padding="@dimen/padding_settings_loan_card"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/sum_loan_text">
+
+                    <TextView
+                        android:id="@+id/amount_loan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_medium"
+
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_size_amount_loan"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageButton
+                        android:id="@+id/edit_loan_amount_button"
+                        android:layout_width="@dimen/edit_amount_icon_size"
+                        android:layout_height="@dimen/edit_amount_icon_size"
+                        android:layout_marginStart="@dimen/margin_start_edit_amount"
+                        android:layout_marginTop="@dimen/margin_top_edit_amount"
+                        android:backgroundTint="@android:color/transparent"
+                        android:contentDescription="@string/edit_amount_loan"
+
+                        android:src="@drawable/edit_amount_loan_button_icon"
+                        app:layout_constraintStart_toEndOf="@id/amount_loan"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/error_amount_loan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_error_amount_loan"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/error_min_amount"
+
+                        android:textColor="@color/error_text_color"
+                        android:textSize="@dimen/text_size_error_amount_loan"
+                        android:visibility="gone"
+                        app:layout_constraintEnd_toEndOf="parent"
+
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <SeekBar
+                        android:id="@+id/price_slider"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="100"
+                        android:paddingVertical="@dimen/padding_vert_price_slider"
+                        android:paddingStart="@dimen/padding_price_slider"
+
+                        android:paddingEnd="@dimen/padding_price_slider"
+
+                        android:progress="70"
+                        android:splitTrack="false"
+                        android:theme="@style/SeekBarColor"
+
+                        android:thumb="@drawable/custom_thumb"
+
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/edit_loan_amount_button" />
+
+                    <TextView
+                        android:id="@+id/min_amount_loan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/min_amount"
+
+                        android:textColor="@color/min_amount_loan"
+                        android:textSize="@dimen/text_size_min_amount_loan"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price_slider" />
+
+                    <TextView
+                        android:id="@+id/max_amount_loan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+                        android:text="@string/max_amount"
+
+                        android:textColor="@color/max_amount_loan"
+                        android:textSize="@dimen/text_size_max_amount_loan"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/price_slider" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/divider_loan_card"
+                        android:background="@color/divider_loan_card"
+                        android:orientation="horizontal"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/min_amount_loan" />
+
+                    <TextView
+                        android:id="@+id/conditions_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_condition_loan"
+                        android:fontFamily="@font/montserrat_regular"
+
+                        android:text="@string/conditions_title_text"
+
+                        android:textColor="@color/condition_loan"
+                        android:textSize="@dimen/text_size_condition_loan"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/divider" />
+
+                    <TextView
+                        android:id="@+id/conditions_description_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/montserrat_regular"
+
+                        android:textColor="@color/text_color"
+                        android:textSize="@dimen/text_size_conditions_description_text"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/conditions_text" />
+
+                    <Button
+                        android:id="@+id/add_loan_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/margin_top_add_loan_button"
+                        android:background="@drawable/button"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:text="@string/add_loan_button_text"
+                        android:textColor="@color/text_color"
+
+                        android:textSize="@dimen/text_size_add_loan_button"
+
+                        android:theme="@style/Button.color"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/conditions_description_text" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:id="@+id/loans_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/settings_loan_card"
+
+                    android:layout_marginTop="@dimen/margin_top_loans_title"
+                    android:layout_marginStart="@dimen/margin_start_loans_title"
+
+                    android:text="@string/loans_title"
+                    android:fontFamily="@font/montserrat_medium"
+                    android:textSize="@dimen/text_size_loans_title"
+                    android:textColor="@color/text_color"
+
+                    />
+
+                <LinearLayout
+                    android:id="@+id/all_loans_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/loans_title"
+
+                    android:layout_marginTop="@dimen/margin_top_all_loans_card"
+                    android:layout_marginStart="@dimen/margin_start_all_loans_card"
+                    android:layout_marginEnd="@dimen/margin_end_all_loans_card"
+
+
+                    >
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rv_main_page"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                        tools:itemCount="3"
+                        tools:listitem="@layout/loan_item"
+
+                        android:layout_marginTop="@dimen/margin_top_rv"/>
+
+                    <Button
+                        android:id="@+id/show_all_loans_button"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/bg_show_all_button"
+                        android:text="@string/show_all_loan_button_text"
+
+                        android:background="@drawable/button"
+                        android:fontFamily="@font/montserrat_medium"
+                        android:textColor="@color/text_color"
+
+                        android:textSize="@dimen/text_size_show_all_loans_button"
+
+                        android:theme="@style/ShowAllButton.color"
+
+                        android:layout_margin="@dimen/margin_show_all_loans_button"
+                        />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/empty_loans_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/text_empty_loans_list"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/loans_title"
+
+                    android:fontFamily="@font/montserrat_regular"
+                    android:textSize="@dimen/text_size_empty_loans_text"
+                    android:textColor="@color/empty_loans_text"
+                    android:layout_marginTop="@dimen/margin_top_empty_loans_text"
+                    android:layout_marginStart="@dimen/margin_start_empty_loans_text"
+                    android:layout_marginEnd="@dimen/margin_end_empty_loans_text"
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/nav_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/divider_top_nav"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_h"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/nav"
+                android:background="@color/divider_nav_bar"
+
+                android:layout_marginBottom="@dimen/margin_bottom_divider"
+                />
+            <LinearLayout
+                android:id="@+id/nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                android:background="@color/white">
+
+                <Button
+                    android:id="@+id/home_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+
+                    android:drawableTop="@drawable/home_active_icon"
+                    android:backgroundTint="@android:color/transparent"
+                    android:textColor="@color/active_button"
+                    android:text="@string/text_main_page_button"
+
+                    android:textSize="@dimen/text_size_button_nav"
+                    android:fontFamily="@font/montserrat_regular"
+
+                    />
+
+                <Button
+                    android:id="@+id/menu_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+
+                    android:drawableTop="@drawable/menu_inactive_icon"
+                    android:backgroundTint="@android:color/transparent"
+                    android:textColor="@color/inactive_button"
+                    android:text="@string/text_button_menu"
+
+                    android:textSize="@dimen/text_size_button_nav"
+                    android:fontFamily="@font/montserrat_regular"
+
+                    />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/pb"
+        android:layout_width="@dimen/pb_size"
+        android:layout_height="@dimen/pb_size"
+        android:indeterminateTint="@color/progress_bar"
+        android:layout_gravity="center"
+        android:visibility="gone"
+
+        />
+
+
+</FrameLayout>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.MenuFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title_menu_page"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/menu_title_page"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:paddingVertical="@dimen/padding_v_title_menu_page"
+            android:paddingStart="@dimen/padding_start_title_menu_page"
+
+            android:textSize="@dimen/text_size_title_menu_page"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/montserrat_medium"
+
+            />
+
+        <ImageButton
+            android:id="@+id/onboarding_button"
+            android:layout_width="@dimen/icon_size_onboarding_button"
+            android:layout_height="@dimen/icon_size_onboarding_button"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/onboarding_button_icon"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+
+            android:layout_margin="@dimen/margin_onboarding_button"
+            />
+
+        <TextView
+            android:id="@+id/all_loans_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/all_loans_title_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/title_menu_page"
+
+            android:layout_marginTop="@dimen/margin_top_first_title"
+            android:layout_marginStart="@dimen/margin_start_titles_menu"
+
+            android:textSize="@dimen/text_size_titles_menu"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/montserrat_medium"
+            />
+
+        <ImageButton
+            android:id="@+id/all_loans_button"
+            android:layout_width="@dimen/icon_size_buttons"
+            android:layout_height="@dimen/icon_size_buttons"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/onboarding_button"
+
+            android:layout_marginEnd="@dimen/margin_end_icon"
+            android:layout_marginTop="@dimen/margin_top_first_icon"
+            />
+
+        <TextView
+            android:id="@+id/offers_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/offers_title_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/all_loans_title"
+
+            android:layout_marginTop="@dimen/margin_top_titles_menu"
+            android:layout_marginStart="@dimen/margin_start_titles_menu"
+
+            android:textSize="@dimen/text_size_titles_menu"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/montserrat_medium"
+            />
+
+        <ImageButton
+            android:id="@+id/offers_button"
+            android:layout_width="@dimen/icon_size_buttons"
+            android:layout_height="@dimen/icon_size_buttons"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/all_loans_button"
+
+            android:layout_marginEnd="@dimen/margin_end_icon"
+            android:layout_marginTop="@dimen/margin_top_icon"
+            />
+        <TextView
+            android:id="@+id/banks_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/banks_title_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/offers_text_title"
+
+            android:layout_marginTop="@dimen/margin_top_titles_menu"
+            android:layout_marginStart="@dimen/margin_start_titles_menu"
+
+            android:textSize="@dimen/text_size_titles_menu"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/montserrat_medium"
+            />
+
+        <ImageButton
+            android:id="@+id/banks_button"
+            android:layout_width="@dimen/icon_size_buttons"
+            android:layout_height="@dimen/icon_size_buttons"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/offers_button"
+
+            android:layout_marginEnd="@dimen/margin_end_icon"
+            android:layout_marginTop="@dimen/margin_top_icon"
+            />
+        <TextView
+            android:id="@+id/help_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/help_title_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/banks_text_title"
+
+            android:layout_marginTop="@dimen/margin_top_titles_menu"
+            android:layout_marginStart="@dimen/margin_start_titles_menu"
+
+            android:textSize="@dimen/text_size_titles_menu"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/montserrat_medium"
+            />
+
+        <ImageButton
+            android:id="@+id/help_button"
+            android:layout_width="@dimen/icon_size_buttons"
+            android:layout_height="@dimen/icon_size_buttons"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/banks_button"
+
+            android:layout_marginEnd="@dimen/margin_end_icon"
+            android:layout_marginTop="@dimen/margin_top_icon"/>
+        <TextView
+            android:id="@+id/language_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/langugage_title_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/help_text_title"
+
+            android:layout_marginTop="@dimen/margin_top_titles_menu"
+            android:layout_marginStart="@dimen/margin_start_titles_menu"
+
+            android:textSize="@dimen/text_size_titles_menu"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/montserrat_medium"
+            />
+
+        <ImageButton
+            android:id="@+id/language_button"
+            android:layout_width="@dimen/icon_size_buttons"
+            android:layout_height="@dimen/icon_size_buttons"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/help_button"
+
+            android:layout_marginEnd="@dimen/margin_end_icon"
+            android:layout_marginTop="@dimen/margin_top_icon"/>
+        <TextView
+            android:id="@+id/logout_text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/logout_title_text"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/language_text_title"
+
+            android:layout_marginTop="@dimen/margin_top_titles_menu"
+            android:layout_marginStart="@dimen/margin_start_titles_menu"
+
+            android:textSize="@dimen/text_size_titles_menu"
+            android:textColor="@color/text_color"
+            android:fontFamily="@font/montserrat_medium"
+            />
+
+        <ImageButton
+            android:id="@+id/logout_button"
+            android:layout_width="@dimen/icon_size_buttons"
+            android:layout_height="@dimen/icon_size_buttons"
+            android:backgroundTint="@android:color/transparent"
+            android:src="@drawable/arrow_right"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/language_button"
+
+            android:layout_marginEnd="@dimen/margin_end_icon"
+            android:layout_marginTop="@dimen/margin_top_icon"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <View
+                android:id="@+id/divider_top_nav"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/divider_h"
+                android:orientation="horizontal"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/nav"
+                android:background="@color/divider_nav_bar"
+
+                android:layout_marginBottom="@dimen/margin_bottom_divider"
+                />
+            <LinearLayout
+                android:id="@+id/nav"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+
+                android:background="@color/white">
+
+                <Button
+                    android:id="@+id/home_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+
+                    android:drawableTop="@drawable/home_inactive_icon"
+                    android:backgroundTint="@android:color/transparent"
+                    android:textColor="@color/inactive_button"
+                    android:text="@string/text_main_page_button"
+
+                    android:textSize="@dimen/text_size_button_nav"
+                    android:fontFamily="@font/montserrat_regular"
+
+                    />
+
+                <Button
+                    android:id="@+id/menu_button"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+
+                    android:drawableTop="@drawable/menu_active_icon"
+                    android:backgroundTint="@android:color/transparent"
+                    android:textColor="@color/active_button"
+                    android:text="@string/text_button_menu"
+
+                    android:textSize="@dimen/text_size_button_nav"
+                    android:fontFamily="@font/montserrat_regular"
+
+                    />
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

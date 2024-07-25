@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <layer-list>
+            <item>
+                <shape android:shape="oval">
+                    <solid android:color="@color/bg_custom_thumb" />
+                    <size android:width="24dp" android:height="24dp" />
+                </shape>
+            </item>
+            <item android:drawable="@drawable/custom_thumb_icon" />
+        </layer-list>
+    </item>
+</selector>

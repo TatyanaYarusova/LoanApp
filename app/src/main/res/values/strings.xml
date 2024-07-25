@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">LoanApp</string>
+
+    <!--    auth layer  -->
+    <string name="login">Вход</string>
+    <string name="registration">Регистрация</string>
+    <string name="login_text_hint">Логин</string>
+    <string name="password_text_hint">Пароль</string>
+    <string name="login_button">Войти</string>
+    <string name="registration_button">Зарегистрироваться</string>
+    <string name="repeat_password_text">Повторите пароль</string>
+
+    <string name="error_empty_input">Обязательное поле ввода</string>
+    <string name="error_password">Пароли не совпадают</string>
+    <string name="error_login_input">Только цифры и латинские буквы</string>
+    <string name="error_login">Неверный логин или пароль</string>
+    <string name="error_registration">Пользователь с таким логином уже существует</string>
+
+
+    <!--    onboarding layer    -->
+    <string name="description_close_onboarding_button">Кнопка закрытия онбординга</string>
+    <string name="img_with_info">Картинка с функционалом</string>
+    <string name="create_loan">Оформить займ</string>
+    <string name="get_loan">Получить займ</string>
+    <string name="all_loans">Оформленные займы</string>
+    <string name="create_loan_description_first">Выберите сумму и нажмите «продолжить». Затем укажите свои данные.</string>
+    <string name="get_loan_description_first">Отслеживайте изменение статуса заявки.</string>
+    <string name="all_loans_description_first">На главном экране приложения отображается список оформленных займов.</string>
+    <string name="create_loan_description_second">После нажатия «Оформить займ» заявка поступит в банк</string>
+    <string name="get_loan_description_second">Когда займ будет одобрен, подойдите с паспортом в отделение банка для подписания договора</string>
+    <string name="back_button_text">Назад</string>
+    <string name="next_button_text">Далее</string>
+    <string name="close_button_text">Закрыть</string>
+
+    <!--    main loan layout   -->
+    <string name="main_page_title">Главная</string>
+    <string name="title_card_text">Сумма займа</string>
+    <string name="amount_loan">%s ₽</string>
+    <string name="error_min_amount">Минимум 1000 ₽</string>
+    <string name="error_max_amount">Максимум 10 000 ₽</string>
+    <string name="min_amount">0 ₽</string>
+    <string name="max_amount">10 000 ₽</string>
+    <string name="conditions_title_text">Условия</string>
+    <string name="conditions_description_text">Под %s %% на %s дней</string>
+    <string name="error_conditions_description_text">Невозможно оформить займ. Сбой подключения</string>
+    <string name="add_loan_button_text">Продолжить</string>
+    <string name="loans_title">Мои займы</string>
+    <string name="id_loan">№ %s</string>
+    <string name="id_loan_tools">№ 176899134565</string>
+    <string name="status_loan">На рассмотрении</string>
+    <string name="amount_loan_text">%s ₽</string>
+    <string name="amount_loan_tools">10 000 ₽</string>
+    <string name="date_loan">25 сентября, вс</string>
+    <string name="show_all_loan_button_text">Посмотреть все</string>
+    <string name="text_main_page_button">Главная</string>
+    <string name="text_button_menu">Меню</string>
+    <string name="text_empty_loans_list">Здесь будут отображаться Ваши активные займы</string>
+    <string name="first_name_hint">Имя</string>
+    <string name="last_name_hint">Фамилия</string>
+    <string name="number_hint">Телефон</string>
+    <string name="text_button_create_loan">Оформить займ</string>
+    <string name="title_text_field">Ваши данные</string>
+    <string name="title_create_loan_page">Оформление займа</string>
+    <string name="text_title_tools">Заявка одобрена</string>
+    <string name="button_tools">Кнопка</string>
+    <string name="title_text_all_loan_page">Мои займы</string>
+
+    <!--    details -->
+    <string name="title_details_id">№ %s</string>
+    <string name="percent">%s %%</string>
+    <string name="amount_draft">%s ₽</string>
+
+    <string name="approved">Одобрен</string>
+    <string name="reject">Отклонен</string>
+    <string name="registered">На рассмотрении</string>
+
+    <string name="title_details_loan_tools">№ 176899134565</string>
+    <string name="name_title_details">Имя</string>
+    <string name="last_name_title">Фамилия</string>
+    <string name="phone_title">Номер телефона</string>
+    <string name="id_loan_title">Номер займа</string>
+    <string name="date_loan_title">Дата оформления</string>
+    <string name="period_loan_title">Период (дней)</string>
+    <string name="percent_loan_title">Процент</string>
+    <string name="sum_title">Сумма</string>
+    <string name="state_loan_title">Статус</string>
+
+    <string name="description_details_loan">Когда займ примет статус «Одобрен», Вам нужно будет подойти с паспортом в отделение банка для подписания договора и получить деньги</string>
+    <string name="menu_title_page">Меню</string>
+    <string name="all_loans_title_text">Мои займы</string>
+    <string name="offers_title_text">Предложения для Вас</string>
+    <string name="banks_title_text">Отделения банка</string>
+    <string name="help_title_text">Помощь</string>
+    <string name="langugage_title_text">Язык</string>
+    <string name="logout_title_text">Выйти</string>
+    <string name="title_text_logout_dialog">Вы уверены, что хотите выйти?</string>
+    <string name="cancel_button_text">Отмена</string>
+    <string name="logout_button_text">Выйти</string>
+    <string name="logo_description">logo</string>
+    <string name="nav_img_description">nav_img</string>
+    <string name="open_onboarding">open onboarding</string>
+    <string name="banner_description">banner</string>
+    <string name="edit_amount_loan">edit amount loan</string>
+
+
+    <!--    result create loan  -->
+    <string name="success_result_text_title">Получите %s ₽ в банке</string>
+    <string name="error_result_text_title">Заявка не одобрена</string>
+    <string name="registr_result_text_title">Заявка зарегистрирована</string>
+
+    <string name="success_description_result">Для получения придите в банк с паспортом</string>
+    <string name="error_description_result">Сейчас мы не можем одобрить вашу заявку</string>
+    <string name="registr_description_result">Ваша заявка на займ зарегистрирована. Необходимо дождаться ответ от банка</string>
+
+    <string name="success_text_button">Посмотреть адреса банков</string>
+    <string name="error_text_button">Вернуться на главную</string>
+    <string name="description_result">Описание займа или ошибки</string>
+
+    <!--    create loan -->
+    <string name="error_alpha">Только латинские буквы</string>
+    <string name="error_number">Номера не существует. Проверьте правильность ввода</string>
+
+
+    <!--    bank    -->
+    <string name="text_title_bank">Сервис временно недоступен</string>
+    <string name="text_button_bank">Вернуться на главную</string>
+
+    <!--    offers    -->
+    <string name="text_title_offers">Специальное предложение</string>
+    <string name="text_button_offers">Ближайшее отделение банка</string>
+    <string name="text_description_offers">Погасите займ досрочно и мы увеличим лимит для следующего займа</string>
+
+    <!--    help   -->
+    <string name="text_title_help">Мы поможем</string>
+    <string name="text_description_help">Остались вопросы по использованию приложения? Обратитесь к нам на горячую линию 8-800-300-10-10</string>
+
+    <!--    language -->
+    <string name="title_language">Язык</string>
+    <string name="button_text_language">Применить</string>
+    <string name="ru_language_title">Русский</string>
+    <string name="en_language_title">English</string>
+
+
+</resources>

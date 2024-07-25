@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--    auth_layout    -->
+    <dimen name="border_bottom_sheet">1dp</dimen>
+    <dimen name="text_input_size">14sp</dimen>
+
+    <dimen name="margin_top_logo">112dp</dimen>
+
+    <dimen name="radius_bottom_sheet">16dp</dimen>
+    <dimen name="margin_top_buttons_bottom_sheet">12dp</dimen>
+
+    <dimen name="h_divider">32dp</dimen>
+    <dimen name="w_divider">2dp</dimen>
+
+    <dimen name="w_button_login_reg">0dp</dimen>
+    <dimen name="text_size_button_login_reg">14sp</dimen>
+
+    <dimen name="margin_top_text_input">8dp</dimen>
+    <dimen name="margin_start_text_input">16dp</dimen>
+    <dimen name="margin_end_text_input">16dp</dimen>
+    <dimen name="radius_text_input">8dp</dimen>
+
+    <dimen name="margin_start_text_error">16dp</dimen>
+    <dimen name="margin_end_text_error">16dp</dimen>
+    <dimen name="text_size_text_error">12sp</dimen>
+
+    <dimen name="text_size_button_auth">14sp</dimen>
+    <dimen name="text_line_height_button_auth">18sp</dimen>
+    <dimen name="margin_auth_button">16dp</dimen>
+    <dimen name="padding_top_auth_button">10dp</dimen>
+    <dimen name="padding_end_auth_button">16dp</dimen>
+    <dimen name="padding_start_auth_button">16dp</dimen>
+    <dimen name="padding_bottom_auth_button">10dp</dimen>
+    <dimen name="radius_button_auth">8dp</dimen>
+
+    <dimen name="pb_size">24dp</dimen>
+    <dimen name="margin_top_pb">24dp</dimen>
+
+
+    <!--    onboarding layout   -->
+    <dimen name="margin_top_close_button">16dp</dimen>
+    <dimen name="margin_start_close_button">16dp</dimen>
+
+    <dimen name="margin_top_img">32dp</dimen>
+
+    <dimen name="margin_top_title_text">12dp</dimen>
+    <dimen name="margin_start_title_text">16dp</dimen>
+    <dimen name="margin_end_title_text">16dp</dimen>
+
+    <dimen name="margin_top_description_first_text">12dp</dimen>
+    <dimen name="margin_start_description_first_text">16dp</dimen>
+    <dimen name="margin_end_description_first_text">16dp</dimen>
+
+    <dimen name="margin_top_description_second_text">4dp</dimen>
+    <dimen name="margin_start_description_second_text">16dp</dimen>
+    <dimen name="margin_end_description_second_text">16dp</dimen>
+
+    <dimen name="text_size_title">22sp</dimen>
+    <dimen name="text_size_description_first">16sp</dimen>
+    <dimen name="text_size_description_second">16sp</dimen>
+
+    <dimen name="divider_w">1dp</dimen>
+    <dimen name="button_text_size">14sp</dimen>
+
+
+    <!--    main loan layout    -->
+    <dimen name="padding_header">16dp</dimen>
+    <dimen name="title_main_loan_text_size">20sp</dimen>
+    <dimen name="onboarding_icon_size">24dp</dimen>
+
+    <dimen name="margin_top_banner">16dp</dimen>
+    <dimen name="margin_hor_banner">16dp</dimen>
+
+    <dimen name="margin_top_sum_loan_text_title">24dp</dimen>
+    <dimen name="margin_start_sum_loan_text_title">16dp</dimen>
+    <dimen name="text_size_sum_loan_text_title">20sp</dimen>
+
+    <dimen name="margin_top_settings_loan_card">8dp</dimen>
+    <dimen name="margin_start_settings_loan_card">16dp</dimen>
+    <dimen name="margin_end_settings_loan_card">16dp</dimen>
+    <dimen name="padding_settings_loan_card">16dp</dimen>
+
+    <dimen name="radius_settings_loan_card">16dp</dimen>
+
+    <dimen name="text_size_amount_loan">20sp</dimen>
+
+    <dimen name="edit_amount_icon_size">24dp</dimen>
+    <dimen name="margin_start_edit_amount">8dp</dimen>
+    <dimen name="margin_top_edit_amount">1dp</dimen>
+
+    <dimen name="text_size_error_amount_loan">12sp</dimen>
+    <dimen name="margin_top_error_amount_loan">5dp</dimen>
+
+    <dimen name="padding_price_slider">0dp</dimen>
+    <dimen name="padding_vert_price_slider">12dp</dimen>
+
+    <dimen name="text_size_min_amount_loan">12sp</dimen>
+    <dimen name="text_size_max_amount_loan">12sp</dimen>
+
+    <dimen name="divider_loan_card">1dp</dimen>
+
+    <dimen name="margin_top_condition_loan">16dp</dimen>
+    <dimen name="text_size_condition_loan">12sp</dimen>
+
+    <dimen name="text_size_conditions_description_text">16sp</dimen>
+
+    <dimen name="margin_top_add_loan_button">32dp</dimen>
+    <dimen name="text_size_add_loan_button">14sp</dimen>
+
+    <dimen name="margin_top_loans_title">24dp</dimen>
+    <dimen name="margin_start_loans_title">16dp</dimen>
+    <dimen name="text_size_loans_title">20sp</dimen>
+
+    <dimen name="padding_all_loans_card">16dp</dimen>
+    <dimen name="margin_top_all_loans_card">16dp</dimen>
+    <dimen name="margin_start_all_loans_card">16dp</dimen>
+    <dimen name="margin_end_all_loans_card">16dp</dimen>
+
+    <dimen name="text_size_show_all_loans_button">14sp</dimen>
+
+    <dimen name="margin_show_all_loans_button">16dp</dimen>
+
+    <dimen name="text_size_empty_loans_text">12sp</dimen>
+
+    <dimen name="margin_top_empty_loans_text">8dp</dimen>
+    <dimen name="margin_start_empty_loans_text">16dp</dimen>
+    <dimen name="margin_end_empty_loans_text">16dp</dimen>
+
+    <dimen name="margin_top_rv">16dp</dimen>
+
+    <!--    loan item   -->
+    <dimen name="text_size_loan_id">16sp</dimen>
+    <dimen name="text_size_loan_amount">16sp</dimen>
+    <dimen name="text_size_loan_state">12sp</dimen>
+    <dimen name="text_size_loan_date">12sp</dimen>
+
+    <dimen name="margin_top_loan_id">8dp</dimen>
+    <dimen name="margin_start_loan_id">16dp</dimen>
+
+    <dimen name="margin_top_loan_amount">8dp</dimen>
+    <dimen name="margin_end_loan_amount">16dp</dimen>
+
+    <dimen name="margin_top_loan_state">2dp</dimen>
+    <dimen name="margin_bottom_loan_state">8dp</dimen>
+    <dimen name="margin_start_loan_state">16dp</dimen>
+
+    <dimen name="margin_top_loan_date">2dp</dimen>
+    <dimen name="margin_bottom_loan_date">8dp</dimen>
+    <dimen name="margin_end_loan_date">16dp</dimen>
+
+    <!--    all loan    -->
+    <dimen name="size_icon">24dp</dimen>
+    <dimen name="margin_top_back_icon">16dp</dimen>
+    <dimen name="margin_start_back_icon">16dp</dimen>
+
+    <dimen name="text_size_title_all_loan_page">20sp</dimen>
+    <dimen name="margin_top_title_all_loan_page">15dp</dimen>
+    <dimen name="margin_start_title_all_loan_page">32dp</dimen>
+
+    <dimen name="margin_top_rv_all_loan_page">16dp</dimen>
+
+
+    <!--    details loan    -->
+    <dimen name="size_icon_details">28dp</dimen>
+    <dimen name="padding_app_bar">16dp</dimen>
+
+    <dimen name="margin_start_title_id_loan">32dp</dimen>
+    <dimen name="text_size_title_id_loan">20sp</dimen>
+
+    <dimen name="margin_container">16dp</dimen>
+    <dimen name="padding_person_info_container">16dp</dimen>
+
+    <dimen name="text_size_titles">12sp</dimen>
+    <dimen name="padding_top_titles">6dp</dimen>
+    <dimen name="padding_bottom_titles">4dp</dimen>
+
+    <dimen name="text_size_info">14sp</dimen>
+    <dimen name="padding_v_info">4dp</dimen>
+
+    <dimen name="padding_loan_info_container">16dp</dimen>
+
+    <dimen name="padding_state_loan_container">16dp</dimen>
+
+    <dimen name="padding_description_text">16dp</dimen>
+    <dimen name="text_size_description_text">12sp</dimen>
+    
+    <!--    menu    -->
+    <dimen name="padding_v_title_menu_page">15dp</dimen>
+    <dimen name="padding_start_title_menu_page">16dp</dimen>
+    <dimen name="text_size_title_menu_page">20sp</dimen>
+
+    <dimen name="icon_size_onboarding_button">24dp</dimen>
+    <dimen name="margin_onboarding_button">16dp</dimen>
+
+    <dimen name="text_size_titles_menu">14sp</dimen>
+    <dimen name="margin_start_titles_menu">12dp</dimen>
+    <dimen name="margin_top_first_title">35dp</dimen>
+    <dimen name="margin_top_titles_menu">38dp</dimen>
+
+    <dimen name="icon_size_buttons">24dp</dimen>
+
+    <dimen name="margin_end_icon">12dp</dimen>
+    <dimen name="margin_top_first_icon">48dp</dimen>
+    <dimen name="margin_top_icon">32dp</dimen>
+
+    <dimen name="margin_end_buttons">12dp</dimen>
+
+    <!--    nav bar -->
+    <dimen name="divider_h">1dp</dimen>
+    <dimen name="margin_bottom_divider">9dp</dimen>
+    <dimen name="text_size_button_nav">12sp</dimen>
+
+    <!--    logout dialog   -->
+    <dimen name="test_size_logout_title">20sp</dimen>
+    <dimen name="margin_top_logout_title">24dp</dimen>
+    <dimen name="margin_hor_logout_title">16dp</dimen>
+
+    <dimen name="margin_top_logout_button">24dp</dimen>
+    <dimen name="text_size_logout_button">14sp</dimen>
+    <dimen name="margin_end_logout_cancel_button">11dp</dimen>
+
+    <!--    result  -->
+    <dimen name="padding_bottom_img">12dp</dimen>
+    
+    <dimen name="margin_top_title_result">16dp</dimen>
+    <dimen name="margin_h_title_result">38dp</dimen>
+    <dimen name="text_size_title_result">20sp</dimen>
+    
+    <dimen name="margin_top_description_result">16dp</dimen>
+    <dimen name="margin_h_description_result">38dp</dimen>
+    <dimen name="text_size_description_result">16sp</dimen>
+
+    <dimen name="margin_button_result">16dp</dimen>
+    <dimen name="text_size_button_result">14sp</dimen>
+
+    <!--    create loan -->
+    <dimen name="icon_size_back_button">24dp</dimen>
+    <dimen name="margin_top_back_button">16dp</dimen>
+    <dimen name="margin_start_back_button">16dp</dimen>
+
+    <dimen name="text_size_title_create_page">20sp</dimen>
+    <dimen name="margin_top_title_create_page">15dp</dimen>
+    <dimen name="margin_start_title_create_page">32dp</dimen>
+
+    <dimen name="margin_top_forms">16dp</dimen>
+
+    <dimen name="margin_start_text">16dp</dimen>
+    <dimen name="text_size_text">16sp</dimen>
+
+    <!--    language   -->
+    <dimen name="size_icon_language">24dp</dimen>
+    <dimen name="margin_top_back_icon_language">16dp</dimen>
+    <dimen name="margin_start_back_icon_language">16dp</dimen>
+
+    <dimen name="text_size_title_language">20sp</dimen>
+    <dimen name="margin_top_title_language">15dp</dimen>
+    <dimen name="margin_start_title_language">32dp</dimen>
+
+    <dimen name="margin_h_radio">12dp</dimen>
+    <dimen name="margin_top_radio">16dp</dimen>
+
+    <dimen name="text_size_language">14sp</dimen>
+
+    <dimen name="padding_v_radio">16dp</dimen>
+
+
+
+
+
+
+
+</resources>

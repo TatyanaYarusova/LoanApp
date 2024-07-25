@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg">#F1F1F2</color>
+
+    <color name="text_color">#151E2A</color>
+    <color name="error_text_color">#E53E3E</color>
+
+    <!--    auth layout -->
+
+    <color name="bg_auth">#FFFFFFFF</color>
+    <color name="border_bottom_sheet">#959698</color>
+
+    <color name="auth_button_bg">#FED200</color>
+    <color name="text_auth_button_inactive">#73787F</color>
+    <color name="text_auth_button_active">#DEB800</color>
+
+    <color name="text_auth_button">#151E2A</color>
+
+    <color name="divider">#E5E5E5</color>
+
+    <color name="progress_bar">#FED200</color>
+
+    <color name="border_input">#73787F</color>
+    <color name="text_input">#151E2A</color>
+    <color name="error_input">#E53E3E</color>
+
+    <!--    onboarding layout   -->
+    <color name="divider_onboarding">#E3E4E5</color>
+
+
+    <!--    main loan layout    -->
+    <color name="bg_main_page">#F1F1F2</color>
+
+    <color name="bg_custom_thumb">#272F3A</color>
+
+    <color name="bg_show_all_button">#F1F1F2</color>
+
+    <color name="price_slider">#272F3A</color>
+    <color name="min_amount_loan">#73787F</color>
+    <color name="max_amount_loan">#73787F</color>
+    <color name="divider_loan_card">#F1F1F2</color>
+
+    <color name="condition_loan">#73787F</color>
+
+    <color name="show_all_loan">#F1F1F2</color>
+    <color name="empty_loans_text">#73787F</color>
+
+    <color name="text_color_approved_status_loan">#19B36D</color>
+    <color name="text_color_registered_status_loan">#FE9800</color>
+    <color name="text_color_rejected_status_loan">#E53E3E</color>
+
+
+    <color name="bg_details_page">#F1F1F2</color>
+
+
+    <color name="text_color_loan_date">#73787F</color>
+
+    <color name="titles_text_color_details">#73787F</color>
+
+    <color name="description_text">#73787F</color>
+
+    <color name="divider_nav_bar">#E3E4E5</color>
+    <color name="active_button">#DEB800</color>
+    <color name="inactive_button">#73787F</color>
+
+    <color name="text_logout_buttons">#DEB800</color>
+
+    <color name="radio">#DEB800</color>
+
+    <color name="input_hint">#73787F</color>
+
+
+
+
+
+</resources>
